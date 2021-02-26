@@ -386,19 +386,19 @@
 	
     <path name="bt-sco-hs-mic">
         <path name="channel-none" />
-        <ctl name="ASRC RATE 1" value="SYNCCLK rate 2" />
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
+        <ctl name="AIF1TX1 Input 3" value="None" />
+        <ctl name="AIF1TX2 Input 3" value="None" />
         <ctl name="ASRC1L Input" value="AIF3RX1" />
         <ctl name="ASRC1R Input" value="AIF3RX2" />
-        <ctl name="AIF2TX1 Input 1" value="ASRC1L" />
-        <ctl name="AIF2TX2 Input 1" value="ASRC1R" />
-        <ctl name="ISRC1INT1 Input" value="AIF3RX1" />
-        <ctl name="ISRC1INT2 Input" value="AIF3RX2" />
-        <ctl name="AIF1TX1 Input 2" value="ISRC1INT1" />
-        <ctl name="AIF1TX2 Input 2" value="ISRC1INT2" />
+        <ctl name="AIF2TX1 Input 2" value="ASRC1L" />
+        <ctl name="AIF2TX2 Input 2" value="ASRC1R" />
+        <ctl name="ISRC2INT1 Input" value="AIF3RX1" />
+        <ctl name="ISRC2INT2 Input" value="AIF3RX2" />
+        <ctl name="AIF1TX1 Input 3" value="ISRC2INT1" />
+        <ctl name="AIF1TX2 Input 3" value="ISRC2INT2" />
         <ctl name="DSP3 Virtual Input" value="None" />
-        <ctl name="ASRC RATE 1" value="SYNCCLK rate 2" />
-        <ctl name="AIF2TX1 Input 1" value="None" />
-        <ctl name="AIF2TX2 Input 1" value="None" />
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
         <ctl name="DSP3 Virtual Input" value="None" />
     </path>
 
@@ -627,22 +627,32 @@
 
     <path name="bt-sco-headset">
 		<path name="verb-normal" />
-        <ctl name="ASRC RATE 1" value="SYNCCLK rate 2" />
-        <ctl name="Sample Rate 3" value="16kHz" />
-        <ctl name="ISRC1DEC1 Input" value="AIF1RX1" />
-        <ctl name="ISRC1DEC2 Input" value="AIF1RX2" />
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
+		<ctl name="Sample Rate 3" value="16kHz" />
         <ctl name="ASRC2L Input" value="AIF2RX1" />
         <ctl name="ASRC2R Input" value="AIF2RX2" />
-        <ctl name="AIF3TX1 Input 1" value="ISRC1DEC1" />
-        <ctl name="AIF3TX2 Input 1" value="ISRC1DEC2" />
-        <ctl name="AIF3TX1 Input 2" value="ASRC2L" />
-        <ctl name="AIF3TX2 Input 2" value="ASRC2R" />
+        <ctl name="ISRC1DEC3 Input" value="AIF1RX1" />
+        <ctl name="ISRC1DEC4 Input" value="AIF1RX2" />
+        <ctl name="AIF3TX1 Input 1" value="ASRC2L" />
+        <ctl name="AIF3TX2 Input 1" value="ASRC2R" />
+        <ctl name="AIF3TX1 Input 2" value="ISRC1DEC3" />
+        <ctl name="AIF3TX2 Input 2" value="ISRC1DEC4" />
     </path>
 	
     <path name="voice-bt-sco-headset">
         <path name="bt-sco-headset" />
-        <ctl name="ASRC RATE 1" value="SYNCCLK rate 2" />
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
+		<ctl name="Sample Rate 2" value="8kHz" />
+		<ctl name="Sample Rate 3" value="16kHz" />
+        <ctl name="ISRC2DEC3 Input" value="AIF1RX1" />
+        <ctl name="ISRC2DEC4 Input" value="AIF1RX2" />
         <ctl name="ISRC2INT1 Input" value="None" />
+        <ctl name="AIF3TX1 Input 1" value="ASRC2L" />
+        <ctl name="AIF3TX2 Input 1" value="ASRC2R" />
+        <ctl name="AIF3TX1 Input 2" value="ISRC2DEC3" />
+        <ctl name="AIF3TX2 Input 2" value="ISRC2DEC4" />
+        <ctl name="AIF1TX1 Input 2" value="ASRC2L" />
+        <ctl name="AIF1TX2 Input 2" value="ASRC2L" />
         <ctl name="AIF3TX1 Input 1 Volume" value="32" />
         <ctl name="AIF3TX1 Input 2 Volume" value="32" />
         <ctl name="AIF3TX2 Input 1 Volume" value="32" />
