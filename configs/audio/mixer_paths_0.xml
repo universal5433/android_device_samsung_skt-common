@@ -708,8 +708,6 @@
     <path name="voice-earpiece-mic">
         <path name="main-mic" />
         <path name="main-mic-voice" />
-        <path name="second-mic" />
-        <path name="second-mic-normal" />
     </path>
 
     <path name="voice-earpiece-mic-wb">
@@ -718,7 +716,7 @@
 
     <path name="voice-speaker-mic">
         <path name="second-mic" />
-        <path name="second-mic-normal" />
+        <path name="second-mic-voice" />
     </path>
 
     <path name="voice-speaker-mic-wb">
