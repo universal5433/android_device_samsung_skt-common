@@ -386,6 +386,7 @@
 	
     <path name="bt-sco-hs-mic">
         <path name="channel-none" />
+		<path name="verb-voicecall" />
         <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
         <ctl name="AIF1TX1 Input 3" value="None" />
         <ctl name="AIF1TX2 Input 3" value="None" />
@@ -637,6 +638,7 @@
         <ctl name="AIF3TX2 Input 1" value="ASRC2R" />
         <ctl name="AIF3TX1 Input 2" value="ISRC1DEC3" />
         <ctl name="AIF3TX2 Input 2" value="ISRC1DEC4" />
+		<ctl name="RCV Switch" value="0" />
     </path>
 	
     <path name="voice-bt-sco-headset">
