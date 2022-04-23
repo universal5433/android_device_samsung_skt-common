@@ -333,9 +333,8 @@
         <ctl name="AIF1TX1 Input 3" value="None" />
         <ctl name="AIF1TX2 Input 3" value="None" />
         <ctl name="EQ2 Input 1" value="None" />
-        <ctl name="LHPF2 Input 1" value="IN2L" />
-        <ctl name="ISRC2DEC1 Input" value="IN2L" />
-		<ctl name="Sub Mic Switch" value="1" />
+        <ctl name="LHPF2 Input 1" value="IN3L" />
+        <ctl name="Sub Mic Switch" value="1" />
         <ctl name="ASRC1L Input" value="LHPF2" />
         <ctl name="ASRC1R Input" value="LHPF2" />
         <ctl name="AIF2TX1 Input 1" value="ASRC1L" />
@@ -344,14 +343,11 @@
 
 	<!--Default mic gain-->
     <path name="second-mic-normal">
-        <ctl name="IN2L Volume" value="42" />
-        <ctl name="LHPF2 Input 1 Volume" value="32" />
-        <ctl name="IN2L Digital Volume" value="180" />
+        <ctl name="IN3L Digital Volume" value="160" />
     </path>
 	<!--Calls mic gain-->
     <path name="second-mic-voice">
-        <ctl name="IN2L Volume" value="27" />
-        <ctl name="IN2L Digital Volume" value="126" />
+        <ctl name="IN3L Digital Volume" value="126" />
         <ctl name="LHPF2 Input 1 Volume" value="32" />
     </path>
 	
