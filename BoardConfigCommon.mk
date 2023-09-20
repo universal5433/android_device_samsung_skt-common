@@ -22,3 +22,6 @@ TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
 # RIL
 BOARD_MODEM_TYPE := ss333
 BOARD_PROVIDES_LIBRIL := true
+
+# Inherit common board flags
+include device/samsung/trelte-common/BoardConfigCommon.mk
